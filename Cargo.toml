@@ -1,8 +1,18 @@
 [package]
-name = "PostNotify"
+name = "post_notify"
 version = "0.1.0"
 edition = "2024"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+path = "src/main.rs"
+name = "PostNotify"
 
 [dependencies]
 actix-web = "4.11.0"
 tokio = { version = "1.45.0", features = ["full"] }
+
+[dev-dependencies]
+reqwest = "0.12.15"
