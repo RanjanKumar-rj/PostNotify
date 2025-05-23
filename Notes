@@ -1,0 +1,7 @@
+# Connect to the DB using psql:
+PGPASSWORD=password psql -U postgres -d postnotify -h localhost 
+
+docker ps -a      # list all containers (even stopped ones)
+docker rm <id>    # remove old container
+
+docker container prune      # to remove all stopped containers
